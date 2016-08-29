@@ -1,0 +1,66 @@
+#check hidden initialization: ls -a
+
+#create empty git: git init
+
+#check log: git log
+	#check graphically: git log —graph
+	#with only one line: git log -—graph -—oneline 	“branchName” (“filename”(optional))
+
+
+
+
+#check status: git status
+
+#add files to staging area: git add “filename”
+
+#reset adding: git reset   
+
+#commit: git commit
+// commits always from Staging area
+
+#commit everything in one time: git commit -am “message”
+
+#make branch: git branch “directory_name”
+
+#see list of branch: git branch
+
+#move to the directory: git checkout “directory_name”
+
+
+
+
+#accessing to previous commit: git checkout “ID”
+	//and u can make new branch from it by git branch “new_branch_name”
+
+
+
+#merge branches: git merge “branch_name” “branch_name2”
+
+
+#just check the difference made previously, by referencing ID: git show “ID”
+
+#delete branch: git branch -d “branch_name”
+
+
+Github
+============================
+
+#check remote: git remote
+
+#add remote: git remote add “name of remote” “url”
+
+#verify url: git remote -v
+
+#push: git push “name of remote” “name of branch”
+
+
+
+ 
+
+
+
+
+  
+
+
+
