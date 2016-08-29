@@ -9,6 +9,12 @@
 
 
 
+
+
+
+
+
+
 #check status: git status
 
 #add files to staging area: git add “filename”
