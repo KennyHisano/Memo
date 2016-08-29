@@ -53,6 +53,8 @@ Github
 
 #push: git push “name of remote” “name of branch”
 
+#clone: git clone "url"
+
 
 
  
