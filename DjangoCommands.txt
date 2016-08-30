@@ -1,0 +1,62 @@
+
+Check installed package: pip freeze
+
+How to run server: python manage.py run server
+
+
+
+
+
+
+sql database
+==========
+
+Sync with database: python manage.py migrate   :  (always make migration beforehand  
+to make changes)
+
+match class from models to database(migration: convert to sql file): python manage.py make migrations “nameofapp” 
+         
+
+check migration: python manage.py sqlmigrate “appname” “4 digits appeared after make migrations“
+
+accessing to database shell: python manage.py shell
+
+import: from “classname”.models import “class name”
+
+
+set data: “some variables” = “data to each” (you can directly update name)
+
+save data: (some variable).save()
+
+access to primary key : (the variable).id or (the variable).pk
+
+check all: “class name”.objects.all()
+
+Filter: “class name”.objects.filter(“field”=“value”)
+
+=====================
+
+
+
+register admin: python manage.py createsuperuser
+
+
+
+
+code
+=====================
+
+url regular express: r’^$’
+
+templates: django has setup the name “templates” as home directory. set this name or html css
+
+
+
+
+ 
+
+
+
+
+
+
