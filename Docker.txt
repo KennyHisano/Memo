@@ -1,0 +1,25 @@
+
+1. create nginx server: docker run -d -p 80:80 —-name “name” nginx
+	//go to http://localhost/ to check
+
+2: stop server: docker stop “container”
+3: start server: docker start “container” (— start exist container)
+4: See details on the web server container: docker ps
+5: remove container: docker rm -f “name”
+6: list images: docker images
+7: remove images: docker rmi “imageId orimageName”
+8: go into container: docker run -it “name”
+9: create container: docker run “image”
+
+
+
+
+==================
+boot2docker
+
+
+run boot2docker; boot2docker up
+
+connect docker with vm: $(boot2docker shellinit)
+
+
