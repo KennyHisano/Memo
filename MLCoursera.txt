@@ -1,0 +1,22 @@
+
+week2
+
+
+===========================
+Linear Regression
+===========================
+Mean normalization
+
+xi with xi - ui to make approximately zero mean
+{mean normalization = average of elements/ (max- min)}
+x1 = size-average/all
+ex -0.5 < x1 < 0.5
+
+
+:polynomial regression
+00 + 01x + 02x^2 + 03x^3
+known as cubic model
+
+root for farther elements
+
+272.25 /25

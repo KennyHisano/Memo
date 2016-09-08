@@ -1,0 +1,10 @@
+https://en.wikibooks.org/wiki/Octave_Programming_Tutorial/Vectors_and_matrices
+
+
+
+generate num: magic()
+
+check existing val: who
+
+create Matlix: eye(n), ones(m,n), zeros(m,n), rand(m,n)
+
