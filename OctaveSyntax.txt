@@ -8,3 +8,70 @@ check existing val: who
 
 create Matlix: eye(n), ones(m,n), zeros(m,n), rand(m,n)
 
+Hide unnecessary tag: PS1(‘>> ’);
+
+make visualized graph: plot(a,b,,,,,)
+
+
+
+===============
+Matrix multiplication ex:
+
+[1 3
+ 4 0   *  [1           [16
+           5        =   4
+ 2 1]       ]           7]
+    
+
+1*1 + 3*5 = 16
+4*1 + 0*5 = 4
+2*1 + 1*5 = 7
+
+element wise operation: rather doing above, it just pile up and multiply. simpler. of course result is different.
+
+===============
+Matrix dot operator difference 
+
+x * y = x row ——  and y row ——— must match
+
+x .* y = row and column both must agree.
+
+
+=======================
+In case of column vector multiplication,
+for example (100*1)* (100*1)
+either has to be row vector = use transpose 
+
+
+================
+matrix addition 
+
+A = [1 2;3 4]
+b = [5;6]
+
+==
+M = [A b]
+===
+
+M =  
+1 2 5
+3 4 6
+
+
+
+==================
+matrix multiplication rules
+
+A * B 
+A’s row needs to match with B’s column
+or
+A’s column needs to match with B’s row
+
+======================
+(A,B) * (C,D) = (A,D)
+======================
+
+==========================
+notice (A' * B')' = B * A
+============================
+

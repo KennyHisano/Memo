@@ -63,6 +63,7 @@ Github
 
 #clone: git clone "url"
 
+#remove : git remote rm origin
 
 
 

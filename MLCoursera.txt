@@ -20,3 +20,152 @@ known as cubic model
 root for farther elements
 
 272.25 /25
+
+
+
+
+
+===============================================================
+
+
+
+
+
+week3:
+
+Classification:
+hypo(x) = each input
+
+Hypothesis Representation:
+
+
+[[[Logistic(Sigmoid) Regression Model]]]
+ - used to regulate each hypothesis to keep between 0 and 1
+
+	hypo(x) = g(hypo^t * x)
+	z = hypo^t * x
+	g(z) = 1/1+e^-z
+
+	hypo(x)  = 1/1+e^-hypo^t * x
+	
+
+if x = [x0;x1], x0 = 1 always
+
+to describe,
+
+hypo(x) = P(y=1|x;0)
+“probability that y = 1, given x, parameterized by hypo”
+
+
+
+
+DecisionBoundary:
+	
+ex, total > 0 or not makes separation. it’s property for hypo.
+
+
+
+
+==========================================================
+week5 debugging
+
+running linear regression but won’t work ->>>> 
+solution:
+1.get more training ex  -> fix high variance
+2. try smaller sets of features -> fix high variance
+3.try getting additional features -> fixing high bias
+4. adding polynomial features  -> fixing high bias 
+5. try decreasing lambda -> fixing high bias
+6. try increasing lambda -> fixing high variance
+7. try using neural network with a large number of hidden units -> fixing high bias
+
+Machine learning diagnostic
+
+1. how to know overfitting
+ :compute test set error
+ :misclassification error(0 or 1)
+
+
+Bias = underfit
+Variance  = overfit
+ 
+
+in neural network, more parameters, more prone to overfitting
+
+Jcv >> Jtrain = high variance.
+ 
+
+ 
+===========================
+recommended approach
+=======================
+- start with a simple algorithm that you can implement quickly,
+implement it and test it on your cross-validation data.
+-plot learning curves to decide if more data, more features, etc are likely to help
+
+-error analysis: manually examine the example(in cross variation set) that your algorithm made error on. see if you spot any systematic trend in what type of examples it is making errors on. 
+
+
+-skewed class
+error showing depends on the number of outputs. not sure wether its improving.
+
+-precision/recall 
+precision - ex(of all patients where we predicted y = 1, what fraction actually has cancer?)
+
+recall - (of all patients that actually have cancer, what fraction did we correctly detect as having cancer?)
+
+Automation of precision/recall:
+F1 score: 2(PR/P+R) <- effective to get max 
+
+majorment: can human expert make good decision or not. 
+
+kernels : similarity functions
+
+SVM parameters:
+C = 1/lambda.
+Large X = Lower bias, high variance.(small lambda)
+small C = higher bias, low variance.(large lambda)
+
+large Sigma^2: features f vary more smoothly -> higher bias, lower variance.
+small sigma^2: features f vary less smoothly -> lower bias, higher variance.
+ 
+
+	
+
+SVM Library:
+-need to specify:
+	choice of parameter C.
+	choice of kernel(similarity function);
+
+E.g. no kernel(“linear kernel”)
+	predict “y=1” if parameter^T * x >=0
+
+Gaussian kernel:
+	f = exp(), where = x.
+	need to choose sigma
+
+n = number of features(x ( R^n+1), m = number of training examples 
+if n is large (relative to m)
+-> use logistic regression, or SVM without a kernel(“linear kernel”)
+
+if n is small, m is intermediate:
+-> use SVM with gaussian kernel
+
+if n is small, m is large:
+-> create/add more features, then use logistic regression or SVM without a kernel
+
+Neural network likely to work well for most of these settings, but may be slower to train. 
+\
+
+
+Elbow method - good way to choose the number of clusters.
+biggest distortion can be the determination factor. 
+
+
+
+
+
+
+
+
+		
