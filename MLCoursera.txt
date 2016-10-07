@@ -162,6 +162,24 @@ Elbow method - good way to choose the number of clusters.
 biggest distortion can be the determination factor. 
 
 
+============================
+week9
+=============================
+
+
+Anomaly detection  = technique to differentiate wether given model is worth to approve or not.
+
+
+
+
+
+=====================
+week10
+======================
+
+
+
+stochastic 
 
 
 
